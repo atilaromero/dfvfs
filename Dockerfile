@@ -3,7 +3,7 @@ FROM atilaromero/libyal:builder-debian-sid-1.3.2
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends \
   python-pip python-setuptools \
-  liblzma-dev python-mock
+  liblzma-dev python-mock python-lzma
 
 RUN pip install --upgrade pip
 RUN pip install wheel
